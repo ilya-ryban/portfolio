@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+   max-width: 1000px;
+    margin: auto;
+    padding: 100px 0;
+}
+.sextion-title{
+    color:black;
+    font-size: 40px ;
+    margin-bottom:  30px;
+    text-align: center;
+
+}
+
+.menu{
+    background-color: black;
+    height: 80px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+}
+.menu-links{
+    float: right;
+
+}
+.menu-link{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 20px;
+    line-height: 55px;
+
+
+}
+.menu-link:hover{
+    color: rgb(255, 123, 0)
+}
+
+
+
+
+.header{
+    background: linear-gradient( #DB7E7E , #FFC997);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+}
+.header-container{
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color: white;
+    text-shadow: 15px 15px 1px rgb(231, 143, 70);
+    font-size: 90px;
+
+}
+.header-link{
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 45px;
+    box-shadow: 15px 15px 1px coral;
+    padding: 30px 60px;
+    margin: auto;
+    display: block;
+    width: fit-content;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 700;
+
+
+}
+.circle-bordered{
+    position: absolute;
+    bottom: -30px;
+    left: 15%;
+    z-index: 1;
+}
+.circle-dashed-border{
+    position: absolute;
+    bottom: -150px;
+    right: -150px;
+    animation: rotation 10s linear infinite;
+    
+
+}
+
+.circle1{
+      position: absolute;
+      top: -120px;
+      left: -60px;
+}
+.circle2{
+      position: absolute;
+      top: -40px;
+      right:  -30px;
+}
+.circle3{
+    position: absolute;
+    bottom: -40px;
+    left: -30px;
+}
+.octagon{
+    position: absolute;
+    top: 590px;
+    left: 1000px;
+    animation: move 5s linear infinite;
+
+}
+.triangle{
+    position: absolute;
+    top: 180px;
+    left: 750px;
+    animation: tru 8s linear infinite;
+    
+}
+
+
+
+
+
+.doing{
+    background: linear-gradient(7deg, #DB7E7E 18.07%, #FFC997 70%, #FFFFFF 70%);
+
+}
+
+
+
+.doing-left{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+
+.doing-reight{
+    width: 49%;
+    display: inline-block;
+}
+
+
+
+.doing-foto{
+    width: 100%;
+}
+
+
+
+.doing-text{
+    border: 1px solid black;
+    border-radius: 45px;
+    box-shadow: 15px 15px 1px coral;
+    padding: 20px 60px;
+    background-color: white;
+    
+}
+
+
+.service{
+    background: linear-gradient(340.62deg, #FFFFFF 45.63%, #DB7F7E 45.64%);
+    text-align: center;
+}
+
+
+.service-card{
+    width: 30%;
+    display: inline-block;
+    border: 4px solid rgb(250, 164, 93);
+    border-radius: 35px;
+    background-color: white;
+    padding: 30px 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 50px;
+
+    
+}
+
+.service-text{
+    color: white;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+.service-world{
+margin-bottom: 15px;
+margin-top: 15px;
+font-size: 30px;
+}
+hr{
+    width: 60%;
+    display: inline-block;
+    height: 4px;
+    margin-bottom: 15px;
+    background-color: rgb(255, 30, 0);
+}
+
+
+
+
+
+.good-card{
+    border: 4px solid rgb(250, 164, 93);
+    border-radius: 10px;
+    background-color: white;
+    width: 500px;
+    padding: 15px 30px;
+    margin: 60px auto;
+    box-shadow: 15px 15px 3px rgb(255, 146, 57);
+    transform: scale(1.3);
+}
+
+
+.good-card1{
+    position: relative;
+    left: 150px;
+}
+.good-card3{
+   position: relative;
+   left: 150px;
+}
+.good-img1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+
+}
+.good-img2{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.good{
+    position: relative;
+}
+
+
+.job-card{
+    height: 200px;
+    width: 49%;
+    display: inline-block;
+    border: 5px solid rgb(247, 143, 47);
+    border-radius: 15px 15px 15px;
+    transition: 0.4s;
+}
+
+.job-card:hover{
+    transform: scale(1.07);
+}
+
+.jc1{
+    background: url(img/portfolio/site1.png) center/cover no-repeat;
+    
+}
+.jc2{
+    background: url(img/portfolio/site2.png) center/cover no-repeat;
+}
+.jc3{
+    background: url(img/portfolio/site3.png) center/cover no-repeat;
+}
+.jc4{
+    background: url(img/portfolio/site4.png) center/cover no-repeat;
+}
+
+
+.the-end{
+    background: linear-gradient( #4de439 , #6a1bfc);
+}
+
+
+@keyframes rotation{
+ 0%{
+   transform: rotate(0);
+ }
+ 
+ 100%{
+    transform: rotate(360deg);
+ }
+}
+
+
+@keyframes move{
+0%{
+    transform: translate(0,0);
+}
+50%{
+    transform: translate(300px,200px);
+}
+100%{
+    transform: translate(0,0);
+}
+}
+
+
+@keyframes tru{
+0%{
+   transform: translateX(0);
+    }
+50%{
+    transform: translateX(-300px);
+    }
+100%{
+    transform: translateX(0);
+    }
+}
+@media(max-width:1500px){
+    .circle3{
+        display: none;
+    }
+    .good-img1{
+        width:  400px;
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+
+@media(max-width:1300px){
+    .good-img2{
+        width: 40px;
+    }
+}
+@media(max-width:1150px){
+    .menu{
+    height: fit-content;
+    }
+    .good-card1{
+        left: 0;
+    }
+    .good-card3{
+        left: 0;
+    }
+    
+}
+@media(max-width:1050px){
+    .triangle{
+        display: none;
+    }
+    .menu-link{
+         margin-left: 140px;
+    }
+    .about{
+        padding: 20px;
+    }
+}
+
+@media(max-width:950px){
+    .menu-link{
+        margin-left: 100px;
+    }
+    .circle-dashed-border{
+        display: none ;
+    }
+}
+
+@media(max-width:830px){
+    .menu-link{
+        margin-left: 60px;
+    }
+    .doing-reight{
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+    .doing-left{
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+    .service-card{
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+    .jc1{
+        display: block;
+        margin: auto;
+    
+    }
+    .jc3{
+       display: block;
+       margin: auto;
+    }
+    .jc2{
+        display: block;
+        margin: auto;
+    
+    }
+    .jc{
+        display: block;
+        margin: auto;
+    
+    }
+}
+
+
+
